@@ -32,10 +32,10 @@ const CameraControls: React.FC<ICameraControls> = ({ onAction }) => {
       width="100%"
     >
       <HStack space="md">
-        <TouchableOpacity onPress={() => cameraMode("video-audio")}>
+        <TouchableOpacity onPress={() => cameraMode("photo")}>
           <Text color={!isVideo ? "yellow" : "gray"}>Photo</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={() => cameraMode("photo")}>
+        <TouchableOpacity onPress={() => cameraMode("video-audio")}>
           <Text color={isVideo ? "yellow" : "gray"}>Video</Text>
         </TouchableOpacity>
       </HStack>
