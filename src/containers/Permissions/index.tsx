@@ -21,7 +21,7 @@ import {
 
 const Permissions: React.FC = () => {
   const [cameraRollResponse, requestPermission] = usePermissions();
-  const { goBack } = useNavigation();
+  const { navigate } = useNavigation<any>();
   const { hasPermission: camPermStatus, requestPermission: requestCamPerm } =
     useCameraPermission();
   const {
@@ -36,11 +36,13 @@ const Permissions: React.FC = () => {
   return (
     <SafeAreaView h="100%">
       <Center position="relative" mx="$10">
-        <Box position="absolute" left={0}>
-          <TouchableOpacity onPress={goBack}>
-            <ArrowLeftIcon size="lg" />
-          </TouchableOpacity>
-        </Box>
+        {camPermStatus && microPermStatus && cameraRollResponse?.granted && (
+          <Box position="absolute" left={0}>
+            <TouchableOpacity onPress={() => navigate("Camera")}>
+              <ArrowLeftIcon size="lg" />
+            </TouchableOpacity>
+          </Box>
+        )}
         <Heading>Permissions</Heading>
       </Center>
       <VStack

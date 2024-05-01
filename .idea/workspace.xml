@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="misce">
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="update README">
+      <change afterPath="$PROJECT_DIR$/src/compositions/Initialization/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Router/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -319,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714596823113</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="update README">
+      <option name="closed" value="true" />
+      <created>1714597587313</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1714597587313</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,7 +349,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="initial commit" />
     <MESSAGE value="installing and configuring react-native-vision-camera" />
     <MESSAGE value="Permission screen created" />
     <MESSAGE value="CameraControls compositions created" />
@@ -363,6 +373,7 @@
     <MESSAGE value="unnecesary TS error" />
     <MESSAGE value="finishing CameraControls" />
     <MESSAGE value="misce" />
-    <option name="LAST_COMMIT_MESSAGE" value="misce" />
+    <MESSAGE value="update README" />
+    <option name="LAST_COMMIT_MESSAGE" value="update README" />
   </component>
 </project>
