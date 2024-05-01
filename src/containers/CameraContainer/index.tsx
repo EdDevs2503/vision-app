@@ -35,6 +35,7 @@ const CameraContainer: React.FC = () => {
 
   useEffect(() => {
     if (!permissionStatus.isLoading && !permissionStatus.value) {
+      // @ts-ignore
       navigate("Permissions");
     }
   }, [permissionStatus, navigate]);

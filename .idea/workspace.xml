@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="CameraContainer in progress">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/expoapp/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp/Info.plist" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
