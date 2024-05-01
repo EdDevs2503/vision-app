@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="unnecesary TS error">
-      <change afterPath="$PROJECT_DIR$/src/components/CameraButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/LastAssets/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getThreeLastAssets.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/openGallery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" afterDir="false" />
-    </list>
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="finishing CameraControls" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -308,7 +300,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714594146409</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="finishing CameraControls">
+      <option name="closed" value="true" />
+      <created>1714596413931</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1714596413931</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -350,6 +350,7 @@
     <MESSAGE value="Preview finished" />
     <MESSAGE value="CameraContainer in progress" />
     <MESSAGE value="unnecesary TS error" />
-    <option name="LAST_COMMIT_MESSAGE" value="unnecesary TS error" />
+    <MESSAGE value="finishing CameraControls" />
+    <option name="LAST_COMMIT_MESSAGE" value="finishing CameraControls" />
   </component>
 </project>
