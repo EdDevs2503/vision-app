@@ -13,8 +13,8 @@ import isDisabledAudioSelector from "../../atoms/CameraStatus/selectors/isDisabl
 import isFrontSelector from "../../atoms/CameraStatus/selectors/isFront";
 import isVideoSelector from "../../atoms/CameraStatus/selectors/isVideo";
 import ResolutionPicker from "../../components/ResolutionPicker";
-import useGetFormats from "../../hooks/useGetFormats";
 import useHasPermission from "../../hooks/useHasPermission";
+import { getResolutions } from "../../utils/getResolutions";
 
 const CameraViewer = forwardRef<Camera>((_, ref) => {
   const isVideo = useRecoilValue(isVideoSelector);
@@ -28,20 +28,14 @@ const CameraViewer = forwardRef<Camera>((_, ref) => {
     () => (isFront ? frontDevice || backDevice : backDevice),
     [backDevice, frontDevice, isFront],
   );
-  const resolutions = useGetFormats([
-    {
-      name: "720p",
-      value: [1280, 720],
-    },
-    {
-      name: "1080p",
-      value: [1920, 1080],
-    },
-    {
-      name: "4k",
-      value: [3840, 2160],
-    },
-  ]);
+  const resolutions = useMemo(
+    () =>
+      getResolutions({
+        isVideo,
+        isFront,
+      }),
+    [isFront, isVideo],
+  );
   const format = useCameraFormat(device, [
     isVideo
       ? { videoResolution: cameraConfiguration.resolution }

@@ -4,45 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="Bugfix CameraControls">
-      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ios/expoapp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atoms/CameraConfiguration/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atoms/CameraConfiguration/selectors/isPreviewDisabled.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isDisabledAudio.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/CameraModePicker/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FPSPicker/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/HDRButton/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Video/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="filterFormat function">
       <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useFps.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useGetFormats.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useHdr.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useVideoStatus.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/format.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/resolution.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/filterFormats.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/getResolutions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ios/expoapp/expoapp.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp/expoapp.entitlements" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/selectors/isFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isFront.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/selectors/isVideo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isVideo.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useSwitchDevice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSwitchDevice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useGetFormats.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -135,7 +105,7 @@
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
       <workItem from="1714425884766" duration="19088000" />
-      <workItem from="1714486964473" duration="24647000" />
+      <workItem from="1714486964473" duration="28524000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -185,7 +155,79 @@
       <option name="project" value="LOCAL" />
       <updated>1714444476848</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hooks for manage the camera state created">
+      <option name="closed" value="true" />
+      <created>1714572029389</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572029389</updated>
+    </task>
+    <task id="LOCAL-00008" summary="components created">
+      <option name="closed" value="true" />
+      <created>1714572053276</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572053276</updated>
+    </task>
+    <task id="LOCAL-00009" summary="compositions created">
+      <option name="closed" value="true" />
+      <created>1714572067780</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572067780</updated>
+    </task>
+    <task id="LOCAL-00010" summary="types created">
+      <option name="closed" value="true" />
+      <created>1714572076297</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572076297</updated>
+    </task>
+    <task id="LOCAL-00011" summary="project configuration">
+      <option name="closed" value="true" />
+      <created>1714572091060</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572091060</updated>
+    </task>
+    <task id="LOCAL-00012" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1714572106842</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572106842</updated>
+    </task>
+    <task id="LOCAL-00013" summary="state manager">
+      <option name="closed" value="true" />
+      <created>1714572130783</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572130783</updated>
+    </task>
+    <task id="LOCAL-00014" summary="routing">
+      <option name="closed" value="true" />
+      <created>1714572145762</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572145762</updated>
+    </task>
+    <task id="LOCAL-00015" summary="filterFormat function">
+      <option name="closed" value="true" />
+      <created>1714572157347</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1714572157347</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +240,15 @@
     <MESSAGE value="Permission screen created" />
     <MESSAGE value="CameraControls compositions created" />
     <MESSAGE value="Bugfix CameraControls" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bugfix CameraControls" />
+    <MESSAGE value="hooks for manage the camera state created" />
+    <MESSAGE value="components created" />
+    <MESSAGE value="compositions created" />
+    <MESSAGE value="types created" />
+    <MESSAGE value="project configuration" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="state manager" />
+    <MESSAGE value="routing" />
+    <MESSAGE value="filterFormat function" />
+    <option name="LAST_COMMIT_MESSAGE" value="filterFormat function" />
   </component>
 </project>
