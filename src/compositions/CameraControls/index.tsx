@@ -11,9 +11,11 @@ import { TouchableOpacity } from "react-native";
 import { useRecoilValue } from "recoil";
 
 import isVideoSelector from "../../atoms/CameraStatus/selectors/isVideo";
+import CameraButton from "../../components/CameraButton";
 import CameraModePicker from "../../components/CameraModePicker";
 import FPSPicker from "../../components/FPSPicker";
 import HDRButton from "../../components/HDRButton";
+import LastAssets from "../../components/LastAssets";
 import useCameraMode from "../../hooks/useCameraMode";
 import useSwitchDevice from "../../hooks/useSwitchDevice";
 import useVideoStatus from "../../hooks/useVideoStatus";
@@ -52,27 +54,12 @@ const CameraControls: React.FC<ICameraControls> = ({
         px="$10"
         alignItems="center"
       >
-        <Box height={60} width={40} />
-        <TouchableOpacity
+        <LastAssets />
+        <CameraButton
           onPress={
             !isVideo ? onTakePhoto : !isRecording ? onStartVideo : onStopVideo
           }
-        >
-          <Center
-            height={65}
-            width={65}
-            borderRadius={65 / 2}
-            borderWidth={2}
-            borderColor="snow"
-          >
-            <Box
-              height={55}
-              width={55}
-              borderRadius={55 / 2}
-              backgroundColor={isVideo ? "red" : "snow"}
-            />
-          </Center>
-        </TouchableOpacity>
+        />
         <TouchableOpacity onPress={switchDevice}>
           <Center
             height={40}
