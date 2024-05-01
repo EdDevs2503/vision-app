@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="refactor">
-      <change afterPath="$PROJECT_DIR$/src/components/CameraModifiers/index.tsx" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="CameraModifiers created">
       <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useFlash.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useVideoAudio.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/CameraConfiguration/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraConfiguration/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useHdr.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHdr.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,7 +104,7 @@
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
       <workItem from="1714425884766" duration="19088000" />
-      <workItem from="1714486964473" duration="35025000" />
+      <workItem from="1714486964473" duration="35916000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -269,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714579477218</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="CameraModifiers created">
+      <option name="closed" value="true" />
+      <created>1714582399837</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1714582399837</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +311,7 @@
     <MESSAGE value="missce" />
     <MESSAGE value="bugfix HDR" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="CameraModifiers created" />
+    <option name="LAST_COMMIT_MESSAGE" value="CameraModifiers created" />
   </component>
 </project>

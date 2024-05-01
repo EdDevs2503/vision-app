@@ -22,6 +22,7 @@ const useCameraResolution = () => {
           ? resolution.maxFps
           : configuration.FPS,
       maxFPS: resolution.maxFps,
+      minFPS: resolution.minFps,
       disablePreview: false,
     });
   };

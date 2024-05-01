@@ -9,6 +9,7 @@ export interface ICameraConfiguration {
   };
   FPS: number;
   maxFPS: number;
+  minFPS: number;
   disablePreview: boolean;
   formatName: string;
 }
@@ -24,6 +25,7 @@ const defaultData: ICameraConfiguration = {
   },
   FPS: 30,
   maxFPS: 30,
+  minFPS: 1,
   disablePreview: false,
 };
 

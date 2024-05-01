@@ -8,11 +8,14 @@ const useHdr = () => {
   );
 
   return {
-    isAllowed: camConfiguration.FPS <= camConfiguration.hdrMaxFps,
+    isAllowed: camConfiguration.minFPS <= camConfiguration.hdrMaxFps,
     isActive: camConfiguration.activeHdr,
     switchStatus: () =>
       setCamConfiguration({
         ...camConfiguration,
+        FPS: !camConfiguration.activeHdr
+          ? camConfiguration.hdrMaxFps
+          : camConfiguration.FPS,
         activeHdr: !camConfiguration.activeHdr,
       }),
   };

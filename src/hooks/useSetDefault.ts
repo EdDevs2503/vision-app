@@ -29,6 +29,7 @@ const useSetDefault = () => {
       },
       FPS: resolution.maxFps >= 60 ? 60 : resolution.maxFps,
       maxFPS: resolution.maxFps,
+      minFPS: resolution.minFps,
       disablePreview: false,
     });
     setStatus({
