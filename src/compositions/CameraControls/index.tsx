@@ -1,11 +1,4 @@
-import {
-  Box,
-  Center,
-  HStack,
-  Icon,
-  RepeatIcon,
-  VStack,
-} from "@gluestack-ui/themed";
+import { Center, HStack, Icon, RepeatIcon, VStack } from "@gluestack-ui/themed";
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import { useRecoilValue } from "recoil";
@@ -16,7 +9,7 @@ import CameraModePicker from "../../components/CameraModePicker";
 import FPSPicker from "../../components/FPSPicker";
 import HDRButton from "../../components/HDRButton";
 import LastAssets from "../../components/LastAssets";
-import useCameraMode from "../../hooks/useCameraMode";
+import usePhotoStatus from "../../hooks/usePhotoStatus";
 import useSwitchDevice from "../../hooks/useSwitchDevice";
 import useVideoStatus from "../../hooks/useVideoStatus";
 
@@ -32,8 +25,19 @@ const CameraControls: React.FC<ICameraControls> = ({
 }) => {
   const { isRecording } = useVideoStatus();
   const switchDevice = useSwitchDevice();
-  const cameraMode = useCameraMode();
   const isVideo = useRecoilValue(isVideoSelector);
+  const { switchTakingPhotoStatus } = usePhotoStatus();
+  const handleAction = () => {
+    const action = !isVideo
+      ? onTakePhoto
+      : !isRecording
+        ? onStartVideo
+        : onStopVideo;
+    if (!isVideo) {
+      switchTakingPhotoStatus(true);
+    }
+    action();
+  };
 
   return (
     <VStack
@@ -55,11 +59,7 @@ const CameraControls: React.FC<ICameraControls> = ({
         alignItems="center"
       >
         <LastAssets />
-        <CameraButton
-          onPress={
-            !isVideo ? onTakePhoto : !isRecording ? onStartVideo : onStopVideo
-          }
-        />
+        <CameraButton onPress={handleAction} />
         <TouchableOpacity onPress={switchDevice}>
           <Center
             height={40}

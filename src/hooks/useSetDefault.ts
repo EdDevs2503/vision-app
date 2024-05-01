@@ -33,6 +33,7 @@ const useSetDefault = () => {
       disablePreview: false,
     });
     setStatus({
+      isTakingPhoto: false,
       hasFlash: device?.hasFlash || false,
       hasTorch: device?.hasTorch || false,
       torch: false,
@@ -41,7 +42,7 @@ const useSetDefault = () => {
       device: "back",
       mode: "photo",
     });
-  }, []);
+  }, [setConfiguration, setStatus]);
 };
 
 export default useSetDefault;

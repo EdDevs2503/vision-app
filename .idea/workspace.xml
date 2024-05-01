@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="update README">
-      <change afterPath="$PROJECT_DIR$/src/compositions/Initialization/index.tsx" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="Initialization screen created">
+      <change afterPath="$PROJECT_DIR$/src/hooks/usePhotoStatus.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/LastAssets/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastAssets/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +21,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -330,7 +332,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714597587313</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Initialization screen created">
+      <option name="closed" value="true" />
+      <created>1714598426383</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1714598426383</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +359,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="installing and configuring react-native-vision-camera" />
     <MESSAGE value="Permission screen created" />
     <MESSAGE value="CameraControls compositions created" />
     <MESSAGE value="Bugfix CameraControls" />
@@ -374,6 +383,7 @@
     <MESSAGE value="finishing CameraControls" />
     <MESSAGE value="misce" />
     <MESSAGE value="update README" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README" />
+    <MESSAGE value="Initialization screen created" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initialization screen created" />
   </component>
 </project>

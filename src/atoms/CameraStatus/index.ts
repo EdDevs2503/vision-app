@@ -8,6 +8,7 @@ export interface ICameraStatus {
   hasTorch: boolean;
   torch: boolean;
   flash: boolean;
+  isTakingPhoto: boolean;
 }
 export const key = "camera-status";
 
@@ -17,6 +18,7 @@ const defaultData: ICameraStatus = {
   torch: false,
   flash: false,
   isRecording: false,
+  isTakingPhoto: false,
   device: "back",
   mode: "photo",
 };
