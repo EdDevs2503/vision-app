@@ -12,6 +12,7 @@ import cameraConfigurationAtom from "../../atoms/CameraConfiguration";
 import isDisabledAudioSelector from "../../atoms/CameraStatus/selectors/isDisabledAudio";
 import isFrontSelector from "../../atoms/CameraStatus/selectors/isFront";
 import isVideoSelector from "../../atoms/CameraStatus/selectors/isVideo";
+import CameraModifiers from "../../components/CameraModifiers";
 import ResolutionPicker from "../../components/ResolutionPicker";
 import useHasPermission from "../../hooks/useHasPermission";
 import { getResolutions } from "../../utils/getResolutions";
@@ -50,7 +51,7 @@ const CameraViewer = forwardRef<Camera>((_, ref) => {
   }
 
   return (
-    <SafeAreaView flex={1} position="relative">
+    <SafeAreaView flex={1} position="relative" justifyContent="center">
       <Camera
         ref={ref}
         // @ts-ignore
@@ -66,6 +67,9 @@ const CameraViewer = forwardRef<Camera>((_, ref) => {
       />
       <Box position="absolute" top={10} alignSelf="center">
         <ResolutionPicker resolutions={resolutions} />
+      </Box>
+      <Box position="absolute" right={10} alignSelf="flex-end">
+        <CameraModifiers />
       </Box>
     </SafeAreaView>
   );

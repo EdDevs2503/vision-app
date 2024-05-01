@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="bugfix resolution issues when changing between modes">
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="refactor">
+      <change afterPath="$PROJECT_DIR$/src/components/CameraModifiers/index.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFlash.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useVideoAudio.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -100,7 +107,7 @@
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
       <workItem from="1714425884766" duration="19088000" />
-      <workItem from="1714486964473" duration="30010000" />
+      <workItem from="1714486964473" duration="35025000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -230,11 +237,54 @@
       <option name="project" value="LOCAL" />
       <updated>1714576066016</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="HDR bugfix">
+      <option name="closed" value="true" />
+      <created>1714577350804</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1714577350804</updated>
+    </task>
+    <task id="LOCAL-00018" summary="missce">
+      <option name="closed" value="true" />
+      <created>1714577366965</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1714577366965</updated>
+    </task>
+    <task id="LOCAL-00019" summary="bugfix HDR">
+      <option name="closed" value="true" />
+      <created>1714577449009</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1714577449009</updated>
+    </task>
+    <task id="LOCAL-00020" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1714579477218</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1714579477218</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -248,11 +298,14 @@
     <MESSAGE value="compositions created" />
     <MESSAGE value="types created" />
     <MESSAGE value="project configuration" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="state manager" />
     <MESSAGE value="routing" />
     <MESSAGE value="filterFormat function" />
     <MESSAGE value="bugfix resolution issues when changing between modes" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugfix resolution issues when changing between modes" />
+    <MESSAGE value="HDR bugfix" />
+    <MESSAGE value="missce" />
+    <MESSAGE value="bugfix HDR" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
 </project>
