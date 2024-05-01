@@ -4,21 +4,31 @@ import {
   HStack,
   Icon,
   RepeatIcon,
-  Text,
   VStack,
 } from "@gluestack-ui/themed";
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import { useRecoilValue } from "recoil";
 
-import isVideoSelector from "../../atoms/cameraStatus/selectors/isVideo";
+import isVideoSelector from "../../atoms/CameraStatus/selectors/isVideo";
+import CameraModePicker from "../../components/CameraModePicker";
+import FPSPicker from "../../components/FPSPicker";
+import HDRButton from "../../components/HDRButton";
 import useCameraMode from "../../hooks/useCameraMode";
 import useSwitchDevice from "../../hooks/useSwitchDevice";
+import useVideoStatus from "../../hooks/useVideoStatus";
 
 interface ICameraControls {
-  onAction: () => void;
+  onTakePhoto: () => void;
+  onStartVideo: () => void;
+  onStopVideo: () => void;
 }
-const CameraControls: React.FC<ICameraControls> = ({ onAction }) => {
+const CameraControls: React.FC<ICameraControls> = ({
+  onTakePhoto,
+  onStartVideo,
+  onStopVideo,
+}) => {
+  const { isRecording } = useVideoStatus();
   const switchDevice = useSwitchDevice();
   const cameraMode = useCameraMode();
   const isVideo = useRecoilValue(isVideoSelector);
@@ -31,13 +41,10 @@ const CameraControls: React.FC<ICameraControls> = ({ onAction }) => {
       alignItems="center"
       width="100%"
     >
-      <HStack space="md">
-        <TouchableOpacity onPress={() => cameraMode("photo")}>
-          <Text color={!isVideo ? "yellow" : "gray"}>Photo</Text>
-        </TouchableOpacity>
-        <TouchableOpacity onPress={() => cameraMode("video-audio")}>
-          <Text color={isVideo ? "yellow" : "gray"}>Video</Text>
-        </TouchableOpacity>
+      <HStack width="100%" px="$3">
+        <FPSPicker />
+        <CameraModePicker />
+        <HDRButton />
       </HStack>
       <HStack
         width="100%"
@@ -46,7 +53,11 @@ const CameraControls: React.FC<ICameraControls> = ({ onAction }) => {
         alignItems="center"
       >
         <Box height={60} width={40} />
-        <TouchableOpacity onPress={onAction}>
+        <TouchableOpacity
+          onPress={
+            !isVideo ? onTakePhoto : !isRecording ? onStartVideo : onStopVideo
+          }
+        >
           <Center
             height={65}
             width={65}
