@@ -1,6 +1,6 @@
 import { useRecoilState } from "recoil";
 
-import cameraStatus from "../atoms/cameraStatus";
+import cameraStatus from "../atoms/CameraStatus";
 
 const useCameraMode = () => {
   const [status, setStatus] = useRecoilState(cameraStatus);
