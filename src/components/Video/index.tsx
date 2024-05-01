@@ -1,6 +1,6 @@
 import { Video as VideoViewer, ResizeMode } from "expo-av";
 import * as React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, Dimensions } from "react-native";
 import { VideoFile } from "react-native-vision-camera";
 
 interface IVideo {
@@ -12,16 +12,15 @@ const Video: React.FC<IVideo> = ({ videoFile }) => {
     <View style={styles.container}>
       <VideoViewer
         style={{
-          alignSelf: "center",
           height: 500,
-          aspectRatio: 1.6,
+          alignSelf: "center",
+          width: Dimensions.get("screen").width - 60,
         }}
         source={{
           uri: videoFile.path,
         }}
         useNativeControls
         resizeMode={ResizeMode.CONTAIN}
-        isLooping
       />
     </View>
   );
@@ -35,11 +34,6 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     backgroundColor: "#ecf0f1",
   },
-  video: (aspectRatio: number) => ({
-    alignSelf: "center",
-    height: 500,
-    aspectRatio,
-  }),
   buttons: {
     flexDirection: "row",
     justifyContent: "center",

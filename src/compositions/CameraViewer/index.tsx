@@ -60,7 +60,7 @@ const CameraViewer = forwardRef<Camera>((_, ref) => {
         style={styles.cam}
         photo={!isVideo}
         video={isVideo}
-        audio={isDisabledAudio}
+        audio={!isDisabledAudio}
         format={format}
         videoHdr={format?.supportsVideoHdr}
         photoHdr={format?.supportsPhotoHdr}

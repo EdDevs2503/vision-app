@@ -9,8 +9,8 @@ import {
   ButtonText,
   DownloadIcon,
   HStack,
-  Image,
   TrashIcon,
+  Image,
 } from "@gluestack-ui/themed";
 import React from "react";
 import { PhotoFile, VideoFile } from "react-native-vision-camera";
@@ -31,6 +31,7 @@ const PreviewModal: React.FC<IPreviewModal> = ({
   photoFile,
   onHide,
   videoFile,
+  onRemoved,
 }) => {
   return (
     <Actionsheet isOpen={isOpen} onClose={onHide}>
@@ -41,8 +42,9 @@ const PreviewModal: React.FC<IPreviewModal> = ({
         </ActionsheetDragIndicatorWrapper>
         {!!photoFile && (
           <Image
-            height={500}
-            aspectRatio={photoFile.height / photoFile.width}
+            resizeMode="contain"
+            h={500}
+            w={(500 / photoFile.height) * photoFile.width}
             source={{ uri: photoFile.path }}
             alt="picture taken"
           />
@@ -53,7 +55,7 @@ const PreviewModal: React.FC<IPreviewModal> = ({
             <ButtonIcon as={DownloadIcon} size="md" mr="$2" />
             <ButtonText>Save</ButtonText>
           </Button>
-          <Button>
+          <Button onPress={onRemoved}>
             <ButtonIcon as={TrashIcon} size="md" mr="$2" />
             <ButtonText>Remove</ButtonText>
           </Button>
