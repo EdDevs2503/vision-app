@@ -1,32 +1,35 @@
-This is a [Next.js](https://github.com/expo/expo) + [Gluestack-ui](https://ui.gluestack.io/) project template bootstrapped with [`create-expo-app`](https://docs.expo.dev/get-started/create-a-project/).
+## Requirements
 
-## Getting Started
+The software needed for this expo react native app are: NodeJS, Android Studio and Xcode
 
-First, run the development server:
+https://nodejs.org/en/download
+
+https://developer.android.com/studio
+
+https://developer.apple.com/documentation/safari-developer-tools/installing-xcode-and-simulators
+
+## Installations
+
+After you have all the requirements, clone this repository and inside the folder run
 
 ```bash
-# For web
-yarn web
-# For ios
-yarn ios
-# For android
-yarn android
+npm install && cd ios && pod install
 ```
 
-You can start editing the page by modifying `App.tsx`. The page auto-updates as you edit the file.
+## Running on Device
 
-This project uses [`@gluestack-ui`](https://ui.gluestack.io/docs/overview/introduction) library that provides optionally styled and accessible components. These components are designed for easy integration into applications developed with React and React Native.
+This application have several native functionalities, so I can't be run in a simulator
+you will need a physical device to run this app.
 
+To do this we need Xcode and/or Android Studio
 
-## Learn More
+### Xcode
 
-To learn more about Expo + Gluestack UI template, take a look at the following resources:
+Open the iOS folder using xcode, connect your iPhone and configure your xcode account and device
+to use it as developer and press run. Very important to have `Installations` step executed before this step
 
-- [Expo Documentation](https://github.com/expo/expo) - learn about Expo features and API.
-- [Gluestack UI Documenatation](https://ui.gluestack.io/docs/overview/introduction) - learn about core concepts and architecture of gluestack-ui.
-- [Gluestack Style Documentaion](https://style.gluestack.io/docs/overview/introduction) - learn about the universal styling library that is used in Gluestack-ui
+### Android Studio
 
-You can check out:
-- [the gluestack-ui GitHub repository](https://github.com/gluestack/gluestack-ui)
-- [the gluestack-style GitHub repository](https://github.com/gluestack/gluestack-style)
-Your feedback and contributions are welcome!
+Open the android folder using Android Studio, connect you android and configure it to use the device in developer mode,
+after that you have to select it as target and press run.
+
