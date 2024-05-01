@@ -31,6 +31,7 @@ const PreviewModal: React.FC<IPreviewModal> = ({
   photoFile,
   onHide,
   videoFile,
+  onSaved,
   onRemoved,
 }) => {
   return (
@@ -51,7 +52,7 @@ const PreviewModal: React.FC<IPreviewModal> = ({
         )}
         {!!videoFile && <Video videoFile={videoFile} />}
         <HStack py="$8" px="$10" width="100%" justifyContent="space-between">
-          <Button>
+          <Button onPress={onSaved}>
             <ButtonIcon as={DownloadIcon} size="md" mr="$2" />
             <ButtonText>Save</ButtonText>
           </Button>

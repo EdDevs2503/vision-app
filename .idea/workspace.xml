@@ -4,12 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="now HDR can be activated and changing to the correct FPS">
-      <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="CameraContainer in progress">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Video/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Video/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/expoapp/Info.plist" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp/Info.plist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,27 +51,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.ios.executor": "Run",
-    "npm.start.executor": "Run",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "ts.external.directory.path": "/Users/edissonmata/projects/vision-app/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.ios.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/edissonmata/projects/vision-app/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="npm.start">
     <configuration name="ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -103,7 +111,8 @@
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
       <workItem from="1714425884766" duration="19088000" />
-      <workItem from="1714486964473" duration="40052000" />
+      <workItem from="1714486964473" duration="42153000" />
+      <workItem from="1714592223861" duration="1709000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -281,7 +290,23 @@
       <option name="project" value="LOCAL" />
       <updated>1714585850208</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Preview finished">
+      <option name="closed" value="true" />
+      <created>1714589979090</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1714589979090</updated>
+    </task>
+    <task id="LOCAL-00024" summary="CameraContainer in progress">
+      <option name="closed" value="true" />
+      <created>1714592256543</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1714592256543</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -320,6 +345,8 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="CameraModifiers created" />
     <MESSAGE value="now HDR can be activated and changing to the correct FPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="now HDR can be activated and changing to the correct FPS" />
+    <MESSAGE value="Preview finished" />
+    <MESSAGE value="CameraContainer in progress" />
+    <option name="LAST_COMMIT_MESSAGE" value="CameraContainer in progress" />
   </component>
 </project>

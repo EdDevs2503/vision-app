@@ -31,7 +31,8 @@
     "react-native-svg": "14.1.0",
     "react-native-vision-camera": "^4.0.1",
     "react-native-web": "~0.19.6",
-    "recoil": "^0.7.7"
+    "recoil": "^0.7.7",
+    "expo-media-library": "~15.9.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",

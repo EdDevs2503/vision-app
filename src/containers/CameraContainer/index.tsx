@@ -20,7 +20,7 @@ const CameraContainer: React.FC = () => {
   const [photoFile, setPhotoFile] = useState<PhotoFile | undefined>();
   const cameraRef = useRef<Camera>(null);
   const { navigate } = useNavigation();
-  const hasPermission = useHasPermission();
+  const permissionStatus = useHasPermission();
   const isVideo = useRecoilValue(isVideoSelector);
   const isPreviewDisabled = useRecoilValue(isPreviewDisabledSelector);
   const setDefault = useSetDefault();
@@ -34,10 +34,10 @@ const CameraContainer: React.FC = () => {
   }, [setDefault]);
 
   useEffect(() => {
-    if (!hasPermission) {
+    if (!permissionStatus.isLoading && !permissionStatus.value) {
       navigate("Permissions");
     }
-  }, [hasPermission, navigate]);
+  }, [permissionStatus, navigate]);
 
   const handleRemovedPrev = () => {
     switchPrevModal();
@@ -48,10 +48,19 @@ const CameraContainer: React.FC = () => {
     }
   };
   const handleSavePrev = () => {
+    setVideoFile(undefined);
     if (isVideo) {
-      if (videoFile) saveVideo(videoFile);
+      if (videoFile)
+        saveVideo(videoFile).finally(() => {
+          setVideoFile(undefined);
+          switchPrevModal();
+        });
     } else {
-      if (photoFile) savePhoto(photoFile);
+      if (photoFile)
+        savePhoto(photoFile).finally(() => {
+          setPhotoFile(undefined);
+          switchPrevModal();
+        });
     }
   };
 

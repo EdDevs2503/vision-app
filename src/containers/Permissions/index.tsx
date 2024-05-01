@@ -11,6 +11,7 @@ import {
   ArrowLeftIcon,
 } from "@gluestack-ui/themed";
 import { useNavigation } from "@react-navigation/native";
+import { usePermissions } from "expo-media-library";
 import React from "react";
 import { TouchableOpacity } from "react-native";
 import {
@@ -19,6 +20,7 @@ import {
 } from "react-native-vision-camera";
 
 const Permissions: React.FC = () => {
+  const [cameraRollResponse, requestPermission] = usePermissions();
   const { goBack } = useNavigation();
   const { hasPermission: camPermStatus, requestPermission: requestCamPerm } =
     useCameraPermission();
@@ -63,6 +65,15 @@ const Permissions: React.FC = () => {
             value={microPermStatus}
             isDisabled={microPermStatus}
             onValueChange={handlePermRequest(requestMicroPerm)}
+          />
+        </HStack>
+        <Divider />
+        <HStack justifyContent="space-between" alignItems="center">
+          <Text bold>Camera Roll:</Text>
+          <Switch
+            value={!!cameraRollResponse?.granted}
+            isDisabled={!!cameraRollResponse?.granted}
+            onValueChange={handlePermRequest(requestPermission)}
           />
         </HStack>
       </VStack>
