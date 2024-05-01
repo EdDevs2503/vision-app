@@ -4,14 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="Initialization screen created">
-      <change afterPath="$PROJECT_DIR$/src/hooks/usePhotoStatus.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/LastAssets/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/LastAssets/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSetDefault.ts" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="now LastAsset will be refresh each time a photo is taken">
+      <change beforePath="$PROJECT_DIR$/src/hooks/useFps.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useFps.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +334,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714598426383</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="now LastAsset will be refresh each time a photo is taken">
+      <option name="closed" value="true" />
+      <created>1714599541594</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1714599541594</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +361,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Permission screen created" />
     <MESSAGE value="CameraControls compositions created" />
     <MESSAGE value="Bugfix CameraControls" />
     <MESSAGE value="hooks for manage the camera state created" />
@@ -384,6 +385,7 @@
     <MESSAGE value="misce" />
     <MESSAGE value="update README" />
     <MESSAGE value="Initialization screen created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initialization screen created" />
+    <MESSAGE value="now LastAsset will be refresh each time a photo is taken" />
+    <option name="LAST_COMMIT_MESSAGE" value="now LastAsset will be refresh each time a photo is taken" />
   </component>
 </project>

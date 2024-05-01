@@ -11,6 +11,8 @@ const useFps = () => {
     setCameraConf({
       ...cameraConf,
       FPS: fpsSelection,
+      activeHdr:
+        fpsSelection > cameraConf.hdrMaxFps ? false : cameraConf.activeHdr,
     });
 
   return {
