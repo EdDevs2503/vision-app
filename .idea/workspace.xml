@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="filterFormat function">
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="bugfix resolution issues when changing between modes">
       <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/getResolutions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useGetFormats.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +100,7 @@
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
       <workItem from="1714425884766" duration="19088000" />
-      <workItem from="1714486964473" duration="28524000" />
+      <workItem from="1714486964473" duration="30010000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -227,7 +222,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714572157347</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="bugfix resolution issues when changing between modes">
+      <option name="closed" value="true" />
+      <created>1714576066016</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1714576066016</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -249,6 +252,7 @@
     <MESSAGE value="state manager" />
     <MESSAGE value="routing" />
     <MESSAGE value="filterFormat function" />
-    <option name="LAST_COMMIT_MESSAGE" value="filterFormat function" />
+    <MESSAGE value="bugfix resolution issues when changing between modes" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix resolution issues when changing between modes" />
   </component>
 </project>

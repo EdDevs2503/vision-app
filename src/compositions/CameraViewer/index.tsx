@@ -61,6 +61,8 @@ const CameraViewer = forwardRef<Camera>((_, ref) => {
         video={isVideo}
         audio={isDisabledAudio}
         format={format}
+        videoHdr={format?.supportsVideoHdr}
+        photoHdr={format?.supportsPhotoHdr}
       />
       <Box position="absolute" top={10} alignSelf="center">
         <ResolutionPicker resolutions={resolutions} />
