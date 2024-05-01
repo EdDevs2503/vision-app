@@ -1,16 +1,17 @@
 import { config } from "@gluestack-ui/config";
-import { GluestackUIProvider, SafeAreaView } from "@gluestack-ui/themed";
+import { GluestackUIProvider } from "@gluestack-ui/themed";
 import { registerRootComponent } from "expo";
 import React from "react";
+import { RecoilRoot } from "recoil";
 
-import Permissions from "../Permissions";
+import Router from "../Router";
 
 const App: React.FC = () => {
   return (
     <GluestackUIProvider config={config}>
-      <SafeAreaView>
-        <Permissions />
-      </SafeAreaView>
+      <RecoilRoot>
+        <Router />
+      </RecoilRoot>
     </GluestackUIProvider>
   );
 };
