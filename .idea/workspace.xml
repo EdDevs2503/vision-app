@@ -4,14 +4,45 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="installing and configuring react-native-vision-camera">
-      <change afterPath="$PROJECT_DIR$/src/containers/Router/index.tsx" afterDir="false" />
+    <list default="true" id="0acabd8e-eee4-4c02-a2e4-e9f6c3f71272" name="Changes" comment="Bugfix CameraControls">
+      <change afterPath="$PROJECT_DIR$/eas.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ios/expoapp.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atoms/CameraConfiguration/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atoms/CameraConfiguration/selectors/isPreviewDisabled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isDisabledAudio.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/CameraModePicker/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/FPSPicker/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/HDRButton/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ResolutionPicker/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Video/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compositions/CameraViewer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/compositions/PreviewModal/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/CameraContainer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useCameraResolution.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useFps.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useGetFormats.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHasPermission.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useHdr.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSaveToCameraRoll.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useVideoStatus.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/format.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/resolution.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/filterFormats.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ios/Podfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/ios/Podfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp.xcodeproj/project.pbxproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ios/expoapp/expoapp.entitlements" beforeDir="false" afterPath="$PROJECT_DIR$/ios/expoapp/expoapp.entitlements" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/selectors/isFront.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isFront.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/atoms/cameraStatus/selectors/isVideo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/atoms/CameraStatus/selectors/isVideo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/compositions/CameraControls/index.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/containers/App/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/App/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Permissions/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Router/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Router/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useCameraMode.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useSwitchDevice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useSwitchDevice.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +53,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -64,7 +96,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="npm.ios">
+  <component name="RunManager" selected="npm.start">
     <configuration name="ios" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -87,8 +119,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.ios" />
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.ios" />
       </list>
     </recent_temporary>
   </component>
@@ -102,6 +134,8 @@
       <updated>1714420808875</updated>
       <workItem from="1714420809987" duration="242000" />
       <workItem from="1714421054467" duration="4763000" />
+      <workItem from="1714425884766" duration="19088000" />
+      <workItem from="1714486964473" duration="24647000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -119,7 +153,39 @@
       <option name="project" value="LOCAL" />
       <updated>1714422396589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Permission screen created">
+      <option name="closed" value="true" />
+      <created>1714425894304</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1714425894304</updated>
+    </task>
+    <task id="LOCAL-00004" summary="CameraControls compositions created">
+      <option name="closed" value="true" />
+      <created>1714443206143</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1714443206143</updated>
+    </task>
+    <task id="LOCAL-00005" summary="CameraControls compositions created">
+      <option name="closed" value="true" />
+      <created>1714443215966</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714443215966</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Bugfix CameraControls">
+      <option name="closed" value="true" />
+      <created>1714444476848</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1714444476848</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +195,9 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="installing and configuring react-native-vision-camera" />
-    <option name="LAST_COMMIT_MESSAGE" value="installing and configuring react-native-vision-camera" />
+    <MESSAGE value="Permission screen created" />
+    <MESSAGE value="CameraControls compositions created" />
+    <MESSAGE value="Bugfix CameraControls" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfix CameraControls" />
   </component>
 </project>
