@@ -5,6 +5,7 @@ import React from "react";
 import Initialization from "../../compositions/Initialization";
 import Camera from "../CameraContainer";
 import Permissions from "../Permissions";
+import PhotoQ from "../PhotoQ";
 
 const Stack = createNativeStackNavigator();
 
@@ -19,6 +20,7 @@ const Router: React.FC = () => {
         <Stack.Screen name="Initialization" component={Initialization} />
         <Stack.Screen name="Camera" component={Camera} />
         <Stack.Screen name="Permissions" component={Permissions} />
+        <Stack.Screen name="PhotoQ" component={PhotoQ} />
       </Stack.Navigator>
     </NavigationContainer>
   );

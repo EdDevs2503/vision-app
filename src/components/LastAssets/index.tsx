@@ -1,25 +1,26 @@
 import { Box, Image } from "@gluestack-ui/themed";
+import { useNavigation } from "@react-navigation/native";
 import { Asset } from "expo-media-library";
 import React, { useEffect, useState } from "react";
 import { TouchableOpacity } from "react-native";
 
 import usePhotoStatus from "../../hooks/usePhotoStatus";
-import { getThreeLastAssets } from "../../utils/getThreeLastAssets";
-import openGallery from "../../utils/openGallery";
+import { getAssets } from "../../utils/getAssets";
 
 const LastAssets: React.FC = () => {
   const [assets, setAssets] = useState<Asset[]>([]);
   const { isTakingPhoto } = usePhotoStatus();
+  const { navigate } = useNavigation<any>();
 
   useEffect(() => {
     if (!isTakingPhoto) {
-      getThreeLastAssets().then((values) => {
+      getAssets(3).then((values) => {
         setAssets(values);
       });
     }
   }, [isTakingPhoto]);
   return (
-    <TouchableOpacity onPress={openGallery}>
+    <TouchableOpacity onPress={() => navigate("PhotoQ")}>
       <Box height={60} width={40} position="relative">
         {assets.map((asset, index) => (
           <Image
