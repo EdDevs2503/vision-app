@@ -17,7 +17,7 @@ interface ICloudStorage {
   uploadingPercent: number | null;
 }
 
-const key = "saved-files";
+const key = "saved-files--ss-sasdasasdas";
 
 const useCloudStorage = (file: Asset): ICloudStorage => {
   const [uri, setUri] = useState("");
@@ -57,7 +57,7 @@ const useCloudStorage = (file: Asset): ICloudStorage => {
   const uploadTask = useMemo(() => {
     const filename = file.filename.split(".");
     return createUploadTask(
-      "https://www.toptal.com/developers/postbin/1715207994267-6263592713512",
+      "https://dummy.restapiexample.com/api/v1/create",
       uri,
       {
         sessionType: FileSystemSessionType.BACKGROUND,
